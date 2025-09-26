@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Container{
+    display: flex;
+    height: 950px;
+
+}
+.Purple{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    width: 50%;
+    color: white;
+    padding: auto;
+    
+}
+.one{
+    margin: auto;
+}
+.White{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}

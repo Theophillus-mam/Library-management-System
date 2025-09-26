@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container{
+    margin-left: 100px;
+    background-color: rgb(246, 246, 243);
+    height: 100vh;
+    padding-left: 20px;
+
+}
+.navigation{
+    display: flex;
+    justify-content: baseline;
+    gap: 380px;
+    margin-top: 20px;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    display: flex;
+    gap: 45px;
+    list-style: none;
+}
+input{
+    height: 20px;
+    width: 200px;
+}
+.part-one{
+    margin-top: 20px;
+    display: flex;
+    width: 80%;
+    gap: 30px;
+}
+.T-Books{
+    background-color: white;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Active-mem{
+    background-color: white;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.issued{
+    background-color: white;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.overdue{
+    background-color: white;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.part{
+    display: flex;
+    margin-top: 40px;
+    height: 300px;
+    width: 100%;
+    gap: 70px;
+}
+.part-two{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    height: 400px;
+}
+.part-two img{
+    width: 30px;
+}
+.newbook{
+    height: 70px;
+    background-color: rgb(244, 244, 244);
+    padding-left: 30px;
+    width: 80%;
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.bookissued{
+    height: 70px;
+    background-color: rgb(244, 244, 244);
+    padding-left: 30px;
+    width: 80%;
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.returnedbook{
+    height: 70px;
+    background-color: rgb(244, 244, 244);
+    padding-left: 30px;
+    width: 80%;
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.new-member{
+    height: 70px;
+    background-color: rgb(244, 244, 244);
+    padding-left: 30px;
+    width: 80%;
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.part-3{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    height: 480px;
+    width: 400px;
+    padding-left: 10px;
+}
+.top button{
+    height: 45px;
+    width: 320px;
+    border-radius: 10px;
+}
+.top button.blue {
+    background-color: blue;
+    color:white;
+    
+}
+.top button.green {
+    background-color: rgb(31, 150, 31);
+    color:white;
+    
+}
+.top button.orange {
+    background-color: rgb(245, 167, 22);
+    color:white;
+}
+.top button.purple {
+    background-color: rgb(175, 53, 175);
+    color:white;
+}
+.top img{
+    width: 30px;
+}
+.bottom{
+    display: grid;
+    gap: 20px;
+    background-color: white;
+    height: 450px;
+    width: 400px;
+    padding-left: 10px;
+}
+.move{
+margin-top: 260px;
+background-color: white;
+height: 250px;
+}
+.apart{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.part-four{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 200px;
+    
+}
+svg{
+    margin-top: 20px;
+}
+.b1{
+    width: 23%;
+    border: black solid 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.b2{
+    width: 23%;
+    border: black solid 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.b3{
+    width: 23%;
+    border: black solid 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.b4{
+    width: 23%;
+    height: 120px;
+    border: black solid 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    padding-left: 10px;
+}
+.pic img{
+    width: 45px;
+}
+.pic{
+    margin-right: 10px;
+}
+.navigation img{
+    width: 70px;
+}
+.n{
+    display: flex;
+    justify-content: baseline;
+}
+
