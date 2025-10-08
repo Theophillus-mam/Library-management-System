@@ -4,40 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="Register-style.css">
+    <link rel="stylesheet" href="login-style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="Container">
         <div class="Purple">
+            <img src="/Assets/Screenshot 2025-09-29 145654.png">
             <h1>Welcome to LibraryMS</h1>
             <p>Your comprehensive Library Management System for the digital</p>
             <div class="digital">
-                <p>Digital Catalog</p>
-                <p>Member Portal</p>
+                <div id="next"><img src="/Assets/Real book.png" alt=""><p>Digital Catalog</p></div>
+                <div id="next"><img src="/Assets/Member-p.png" alt=""><p>Member Portal</p></div>
+                
             </div>
             
         </div>
         <div class="White">
-            <img class="open" src="./Assets/open-book_12743734.gif">
-            <h1>Login</h1>
+            <img class="open" src="./Assets/sign-up book.png" style="width: 100px;">
+            <h1>Sign in</h1>
             <p>Access your library account</p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg>
-            <label for="email">Email Address</label>
-            <input type="email" name="email" placeholder="Enter your email">
-            <img src="./Assets/lock-fill.png" alt="">
-            <label for="password">Password</label>
-            <input type="password" name="password">
             <div class="flex">
-            <input type="checkbox" name="check" >
-            <label for="check">Remember me</label>
-            <p><a href="#">Forgot password?</a></p>
+             
+            <label for="Email">Email Address</label>   
             </div>
-            <button>Login</button>
+            <input type="email" autocomplete="username" name="Email" id="Email" placeholder="Enter your email" required>
+            <div class="flex">
+            
+            <label for="Password">Password</label>
+            </div>
+            <input type="password" autocomplete="current-password" id="Password" name="Password" placeholder="Enter your password" required>
+            <div class="ex"><input type="checkbox" name="show" id="show" onclick="myFunction()"><label for="show">Show Password</label></div>
+            <div class="lex">
+                <div class="fex">
+                  <input type="checkbox" name="checkit" id="checkit" required>
+                  <label for="checkit">Remember me?</label>  
+                </div>
+            <p><a href="Forgot.html">Forgot password?</a></p>
+            </div>
+            <button id="SignIn">Sign in</button>
 
             <p id="line"><span></span> continue with<span></span></p>
+            <div class="btn">
+            <button class="trans"><img src="/Assets/Google.png" alt="">Google</button>
+            <button class="trans"><img src="/Assets/micro.png" alt="">Microsoft</button>
+            </div>
 
+            <p>Don't have an account? <a href="Register.html">Sign up</a></p>
         </div>
     </div>
+    <script type="module" src="auth2.js"></script>
 </body>
 </html>

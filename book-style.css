@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: #f8f8f8;
+    width: 90%;
+    height: 100%;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background-color: white; 
+    width: 100%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: black;
+} 
+.icon{
+    display: flex;
+}
+.container1{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 30px;
+    width: 100%;
+}
+.side-panel{
+    background-color: white;
+    padding: 30px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 20%;
+    height: 70vh;
+}
+input, select {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+} 
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex input{
+    width: 45%;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    margin-left: 40px;
+
+}
+.cata-header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.books{
+    display: grid;
+    row-gap: 20px;
+    margin-top: 30px;
+}
+.top{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+}
+.bottom{
+     display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+   
+    gap: 30px;
+}
+.books{
+    display: flex;
+    gap: 10px;
+}
+.books div{
+   height: 200px;
+    width: 90%; 
+    height: 30vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+ button.Borrow{
+    background-color: blue;
+    color: white;
+}
+button.return{
+    background-color: rgb(251, 160, 22);
+    color: white;
+}
+button.due{
+    background-color: rgb(196, 190, 190);
+    color: gray;
+}
+button.reserved{
+    background-color: rgb(246, 213, 138);
+    color: brown;
+}
+.index{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 80%;
+    margin-left: 32.5% ;
+    margin-top: 20px;
+    font-size: large;
+    gap: 10px;
+}
+.index button{
+    background-color: transparent;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+}

@@ -3,15 +3,21 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 0px;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     font-family: 'Segoe UI', Arial, sans-serif;
+    width: 100%;
 }
-
+.bContainer{
+    display: flex;
+    width: 80%;
+    gap: 50px;
+}
 .Container {
-    width: 400px;
+    width: 30%;
     background: #fff;
     border-radius: 24px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
@@ -20,20 +26,25 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-left: 200px;
 }
 
 .Container1 {
     background-image: url(./Assets/clean.png);
-    background-size: contain;
+    background-size: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;            
-    min-height: 180px;
+    height: 480px;
     border-radius: 16px 16px 0 0;
-    width: 100%;
+    width: 20%;
     background-repeat: no-repeat;
     background-position: center;
-
+    color: white;
+    padding-top: 250px;
+    padding-right: 160px;
+    
 }
 
 .Purple {
@@ -44,6 +55,7 @@ body {
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 1px;
+    width: 100%;
 }
 
 .White {

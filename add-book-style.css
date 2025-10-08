@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: whitesmoke;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+nav button{
+    width: 150px;
+    height: 30px;
+    text-align: right;
+}
+.main{
+    display: flex;
+    gap: 2%;
+}
+.Panel{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-left: 10px;
+        gap: 15px;
+        font-size: 20px;
+        background-color: white;
+        width: 16%;
+}
+.Panel img{
+    width: 20px;
+}
+.Management{
+    margin-top: 30px;
+    width: 80%;
+    height: 95%;
+}
+.separate{
+    display: flex;
+    justify-content:space-between ;
+}
+.Separate{
+    display: flex;
+    justify-content:space-between ;
+    padding-top: 30px;
+}
+.add-new{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 5px;
+    background-size: cover;
+    height: 70%;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.split{
+    display: flex;
+    gap: 10px;
+}
+.choice{
+    display: flex;
+    flex-direction: column;
+}
+.Current{
+    width: 65%;
+    height: 70%;
+    background-color: white;
+}
+table{
+    margin-top: 30px;
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+th,td{
+    text-align: left;
+    padding: 10px 20px;
+}
+.h-aligning{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.th{
+    background-color: whitesmoke;
+}
+input {
+     width: 90%;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.total{
+    background-color: white;
+    width: 20%;
+    height: 80px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.available{
+    background-color: white;
+    width: 20%;
+    height: 80px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.Borrowed{
+    background-color: white;
+    width: 20%;
+    height: 80px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.Out-of-Stock{
+    background-color: white;
+    width: 20%;
+    height: 80px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.separate div button{
+    background-color: rgb(38, 140, 243);
+    color: white;
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+.add-new button{
+        width: 80%;
+        height: 30px;
+        background-color: rgb(44, 175, 116);
+        border-radius: 10px;
+        border: none;
+        color: white;
+}
+.Current .separate input{
+    width: 40%;
+}
+.Current .separate button{
+    background-color: transparent;
+    color: black;
+    border: solid 2px black;
+    width: max-content;
+}
+select{
+    width: 190px;
+    height: 30px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.Current td img{
+    width: 20px;
+    height: 20px;
+}
+#separate{
+    display: flex;
+}
+.add-new img{
+    width: 40px;
+}
+.Current img{
+    width: 40px;
+}
+#avail{
+    color: green;
+    background-color: rgb(139, 246, 139);
+    height: 20px;
+    border-radius: 5px;
+}
+#ntavail{
+    color: red;
+    background-color: rgb(232, 116, 116);
+    height: 20px;
+    border-radius: 5px;
+}
+.h-aligning img{
+    width: 40px;
+}
+#type{
+    color: purple;
+    background-color: rgb(190, 96, 190);
+    height: 20px;
+    border-radius: 5px;
+}
+#types{
+    color: blue;
+    background-color: rgb(109, 109, 237);
+    height: 20px;
+    border-radius: 5px;
+}
+#green{
+    color: rgb(24, 176, 24);
+}
+#orange{
+    color: orange;
+}
+#red{
+    color: red;
+}
+

@@ -4,155 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <title>Document</title>
 </head>
 <body>
     <div class="Container">
         <div class="navigation">
-         <div class="n">
-            <img src="./Assets/open-book_12743734.gif" >
-           <h1>LibraryMS</h1>
+         <div class="nav">
+            <img src="/Assets/header blue.png" >
+            <h2>LibraryMS</h2>
         </div> 
             
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Book Catalog</a></li>
-                <li><a href="#">Add Book</a></li>
-                <li><a href="#">Members</a></li>
-                <li><a href="#">Reports</a></li>
-            </ul>
-        </nav>
         <div class="nav-last">
         <input type="text" name="search" id="search" placeholder="Search books...">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M5 18H19V11.0314C19 7.14806 15.866 4 12 4C8.13401 4 5 7.14806 5 11.0314V18ZM12 2C16.9706 2 21 6.04348 21 11.0314V20H3V11.0314C3 6.04348 7.02944 2 12 2ZM9.5 21H14.5C14.5 22.3807 13.3807 23.5 12 23.5C10.6193 23.5 9.5 22.3807 9.5 21Z"></path></svg>
     </div>
     </div>
-    <div class="part-one">
-    <div class="T-Books">
-        <div>
-        <p>Total Books</p>
-        <h2>12,847</h2>
-        <sub>+2,5% from last month</sub>
+  
+    <div class="part-one"> 
+        <div class="Panel">
+            <p><a href="index.html"><img src="/Assets/line-chart-line.png">Dashboard</a></p>
+            <p><a href="#"><img src="/Assets/book.png" alt="">My Book</a></p>
+            <p><a href="#"><img src="/Assets/list.png">Wishlist</a></p>
+            <p><a href="#"><img src="/Assets/return book.png">History</a></p>
+            <p><a href="#"><img src="/Assets/review.png">Reviews</a></p>
+            <p><a href="#"><img src="/Assets/profile.png">Profile</a></p>
+            <p><a href="#"><img src="/Assets/settings.png">settings</a></p>
         </div>
-        <div class="pic">
+        <div class="inner">
+        <div class="welcome">
+            <div>
+             <h1>Welcome back, Sarah!</h1>
+            <p>Ready to continue your reading journey?</p>
+            </div>
+            <div>
+                <h1>5</h1>
+                <p>Books borrowed</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="currently">
+                <div class="spit">
+                    <p>Currently Reading</p>
+                    <h2>3</h2>
+                </div>
+                <div>
+                    <img src="/Assets/Blue-popular.png">
+                </div>
+            </div>
+            <div class="read">
+                <div class="spit">
+                    <p>Books Read</p>
+                    <h2>47</h2>
+                </div>
+                <div>
+                    <img src="/Assets/clock_14026529.png">
+                </div>
+            </div>
+            <div class="overdue">
+                <div class="spit">
+                    <p>Overdue Books</p>
+                    <h2>1</h2>
+                </div>
+                <div>
+                    <img src="/Assets/warn.png">
+                </div>
+            </div>
+            <div class="wishlist">
+                <div class="spit">
+                    <p>Wishlist</p>
+                    <h2>8</h2>
+                </div>
+                <div>
+                    <img src="/Assets/wl.png">
+                </div>
+            </div>
+        </div>
+        <div class="two-part">
+            <div class="C-Reading">
+                <div class="flex">
+                    <h2>Currently Reading</h2>
+                    <p>View All</p>
+                </div>
+                <div class="gray">
+                    <div class="book-cover1">
+                        <div class="img">
+                            <img src="/Assets/pro-book.png" alt="">
+                        </div>
+                        <div class="par">
+                            <div>
+                        <h3>The Great Gatsby</h3><p>by F.Scott Fitzgerald</p><br>
+                        
+                        </div>
+                <div class="hun"><div class="split"><sup>Progress: 65%</sup><sup>Due: 3 days</sup></div>
+                        <span><progress value="65" max="100"></progress></span></div>
+                    </div></div>
+                    <div class="book-cover1">
+                        <div class="img">
+                            <img src="/Assets/prog-book.png" alt=""> </div>
+                            <div class="par">
+                                <div>
+                                    <h3>To Kill a Mockingbird</h3><p>by Harper Lee</p><br>
+                                    
+                                </div>
+                       <div class="hun"><div class="split"><sup>Progress: 23%</sup><sup>Due: 5 days</sup></div>
+                        <span><progress value="23" max="100">unit</progress></span></div> 
+                    </div></div> 
+                </div>
+            </div>
+            <div class="Recommended">
+                <h2>Recommended</h2>
+                <div class="book1">
+                    <div class="pic">
+                        <img src="/Assets/pror-book.png" alt="">
+                    </div>
+                    <div>
+                    <h3>1984</h3>
+                    <sub>by George Orwell</sub> 
+                    <div class="rating">
+                    <div class="star-rating">
+                    <span class="star filled">&#9733;</span> <!-- Unicode star character -->
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    </div>
+                    <p>4.8</p>
+                    </div> 
+                    </div>             
+                </div>
+                <div class="book1">
+                    <div class="pic">
+                        <img src="/Assets/prop-book.png" alt="">
+                    </div>
+                    <div>
+                    <h3>Pride and Prejudice</h3>
+                    <sub>by Jane Austen</sub>
+                    <div class="rating">
+            <div class="star-rating">
+                    <span class="star filled">&#9733;</span> <!-- Unicode star character -->
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    </div>
+                    <p>4.3</p>
+                    </div>
 
-        </div>
-    </div>
-    <div class="Active-mem">
-        <div>
-        <p>Active Members</p>
-        <h2>3,421</h2>
-        <sub>+5.2% from last month</sub>
-        </div>
-        <div class="pic">
-            <img src="./Assets/community_9278604.png">
-        </div>
-    </div>
-    <div class="issued">
-        <div>
-        <p>Books Issued</p>
-        <h2>1,234</h2>
-        <sub>-1.2% from last month</sub>
-        </div>
-        <div class="pic orange">
-            <img src="./Assets/hand_11785183.png" alt="">
-        </div>
-    </div>
-    <div class="overdue">
-        <div>
-        <p>Overdue Books</p>
-        <h2>87</h2>
-        <sub>+3 from yesterday</sub>
-        </div>
-        <div class="pic">
-            <img src="./Assets/warning_8273268.png">
-        </div>
-    </div>
-    </div>
-    <div class="part">
-    <div class="part-two">
-        <h3>Recent Activities</h3>
-        <div class="newbook">
-            <div class="img">
-                <img src="./Assets/add_15526434.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div>
-            <h4>New book added: "The Great Gatsby"</h4>
-            <sub>2 minutes ago</sub>
-            </div>
-        </div>
-        <div class="bookissued">
-            <div class="img">
-                <img src="./Assets/right-arrow_17879367.png">
-            </div>
-            <div>
-            <h4>Book issued to John Doe</h4>
-            <sub>15 minutes ago</sub>
-            </div>
-        </div>
-        <div class="returnedbook">
-            <div class="img">
-                <img src="./Assets/left-arrow_4435308.png" >
-            </div>
-            <div>
-            <h4>Books Returned by Sarah Wilson</h4>
-            <sub>1 hour ago</sub>
-            </div>
-        </div>
-        <div class="new-member">
-            <div class="img">
-                <img src="./Assets/add-user_18183402.png" alt="">
-            </div>
-            <div>
-            <h4>New member registered: Mike Johnson</h4>
-            <sub>2 hours ago</sub>
-            </div>
-        </div>
-    </div>
-    <div class="part-3">
-        <div class="top">
-            <h3>Quick Actions</h3>
-            <button class="blue"><b>+ Add New Book</b></button>
-            <button class="green"><img src="./Assets/add-user_11919432.gif" alt=""><b>Add Member</b></button>
-            <button class="orange"><b>Issue Book</b></button>
-            <button class="purple"><b>View Reports</b></button>
         </div>
         <div class="bottom">
-            <h3>Popular Books</h3>
-            <h4>To kill a Mockingbird</h4>
-            <sub>22 times borrowed</sub>
-            <h4>1954</h4>
-            <sub>19 times borrowed</sub>
-            <h4>Pride and Prejudice</h4>
-            <sub>17 times borrowed</sub>
+            <h2>Recent Activity</h2>
+            <div class="completed">
+                <div class="reading">
+                    <p><img src="/Assets/Nike.png">Completed reading <b>"The Catcher in the Rye</b></p>
+                    <sub>2 day ago</sub>
+                </div><hr>
+                <div class="added">
+                <p><img src="/Assets/wishlist.png"> Added <b>"Dune"</b> to wishlist</p>
+                    <sub>5 days ago</sub>
+                </div><hr>
+                <div class="rated">
+                    <p><img src="/Assets/rated.png"> Rated <b>"Brave New World"</b> 5 stars</p>
+                    <sub>1 week ago</sub>
+                </div><hr>
+            </div>
         </div>
+       </div>
     </div>
-    </div>
-    <div class="move">
-        <div class="apart">
-            <h3>Recent Books</h3>
-            <p>View All Books</p>
-        </div>
-        <div class="part-four">
-        
-        <div class="b1">
-            <h4>The Great Gatsby</h4>
-            <p>F.Scott Fitzigerald</p>
-        </div>
-        <div class="b2">
-            <h4>To kill a Mockingbird</h4>
-            <p>Harper Lee</p>
-        </div>
-        <div class="b3">
-            <h4>1954</h4>
-            <p>George Orwell</p>
-        </div>
-        <div class="b4">
-            <h4>Pride and Prejudice</h4>
-            <p>Jane Auston</p>
-        </div>
-    </div></div>
     </div>
 </body>
 </html>

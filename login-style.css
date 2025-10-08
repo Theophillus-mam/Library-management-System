@@ -1,143 +1,126 @@
-body {
-    margin: 0;
+body{
     padding: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color:whitesmoke ;
-    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: whitesmoke;
 }
-
-.Container {
-    width: 400px;
-    max-width: 95vw;
-    margin: auto;
-    box-shadow: 0 8px 32px rgba(40, 60, 120, 0.18);
-    border-radius: 16px;
-    overflow: hidden;
+.Container{
     display: flex;
-    flex-direction: row;
-    background: #fff;
-    padding-left: 40px;
+    height: 950px;
+     width: 60%;
+    margin: auto;
+    background-color: whitesmoke;
+    margin-top: 30px;
+}
+.Purple{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(93, 52, 227);
+    width: 40%;
+    color: white;
+    padding: auto;
+    border-radius: 30px;
+    margin-left: 150px;
     
 }
-
-.Purple {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: #fff;
-    padding: 48px 32px;
-    width: 40%;
-    display: flex;
+.one{
+    margin: auto;
+}
+.White{
+     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    box-shadow: 2px 0 12px rgba(106,17,203,0.08);
-}
-
-.Purple .one {
-    font-size: 2.2em;
-    font-weight: 700;
-    margin-bottom: 18px;
-    letter-spacing: 1px;
-}
-
-.Purple p {
-    font-size: 1.05em;
-    margin: 0;
-    opacity: 0.92;
-}
-
-.White {
-    background: white;
-    padding: 48px 32px;
-    width: 40%;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    width: 50%;
+    background-color: white;
+    border-radius: 30px;
 }
-
-form {
-    width: 100%;
+.digital{
     display: flex;
-    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.digital img{
+    width: 30px;
+}
+.flex{
+    display: flex;
+    text-align: left;
+    margin-right: 370px;
+    
+}
+.lex{
+    display: flex;
+    gap: 40%;
+    width: 100%;
+    padding-left: 110px;
+}
+input, select {
+     width: 80%;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+button{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(93, 52, 227);
+    color: white;
+    font-size: 20px;
+}
+.White input#check{
+    width: 20px;
+}
+#next{
+    display: flex;
+}
+.btn{
+    display: flex;
     gap: 20px;
 }
-
-input[type="text"],
-input[type="password"] {
-    padding: 12px 14px;
-    border: 1.5px solid #d1d5db;
-    border-radius: 8px;
-    font-size: 1em;
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    background: #f8fafc;
-    box-shadow: 0 1px 2px rgba(37,117,252,0.04);
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-    border-color: #2575fc;
-    box-shadow: 0 0 0 2px rgba(37,117,252,0.15);
-}
-
-button[type="submit"] {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 0;
-    font-size: 1.05em;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(37,117,252,0.08);
-    transition: background 0.2s, box-shadow 0.2s;
-}
-
-button[type="submit"]:hover {
-    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
-    box-shadow: 0 4px 16px rgba(37,117,252,0.12);
-}
-
-#line {
+.btn button{
+    background-color: white;
+    color: black;
+    border: 1px solid grey;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin: 14px 0;
+    width: 120px;
+    height: 40px;
 }
-
-#line span:first-child,
-#line span:last-child {
-    flex: 1;
-    height: 1.5px;
-    background: #e5e7eb;
+input#checkit{
+    width: 15px;
 }
-
-#line span:nth-child(2) {
-    color: #888;
-    font-size: 1em;
-    font-weight: 500;
+label{
+    text-align: left;
 }
-
-button[type="button"] {
-    background: #fff;
-    color: #2575fc;
-    border: 1.5px solid #2575fc;
-    border-radius: 8px;
-    padding: 12px 0;
-    font-size: 1.05em;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 1px 4px rgba(37,117,252,0.06);
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+input#show{
+    width: 15px;
 }
-
-button[type="button"]:hover {
-    background: #2575fc;
-    color: #fff;
-    box-shadow: 0 2px 8px rgba(37,117,252,0.12);
-}
-.Purple .digital {
+.fex{
     display: flex;
-    flex-direction: row;
-    gap: 12px;
-    margin-top: 12px;
+    justify-content: baseline;
+    gap: 10px;
+}
+.fex label{
+    margin-top: 15px;
+}
+.ex{
+   display: flex;
+    justify-content: baseline;
+    gap: 10px; 
+    margin-right: 62%;
+}
+.ex label{
+    margin-top: 20px;
+    
 }

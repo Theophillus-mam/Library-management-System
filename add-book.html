@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add-book-style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Container">
+        <nav>
+            <div class="">
+                <h1>Library Management System</h1>
+                <p>Book Inventory Managent</p>
+            </div>
+            <div class="admin">
+               <button>admin Profile</button> 
+            </div>
+        </nav>
+        <div class="main">
+        <div id="Panel" class="Panel">
+            <p><img src="/Assets/line-chart-line.png"><a href="index1.html">Dashboard</a></p>
+            <p>Book Management</p>
+            <p><img src="/Assets/group-chat_9333906.png">Members</p>
+            <p><img src="/Assets/change_7344607.png">Transactions</p>
+            <p>Reports</p>
+            <ul id="myul">
+
+            </ul>
+        </div>
+        <div class="Management">
+            <div class="separate">
+            <div>
+            <h1>Book Management</h1>
+            <p>Add, edit and remove books from your library inventory</p>
+            </div>
+            <div>
+            <button onclick="location.href='add-book.html'">+Add New Book</button>
+            </div>
+            </div>
+            <div class="Separate">
+            <div class="add-new">
+                <h2><img src="/Assets/add_15526434.png">Add New Book</h2>
+                <label for="Book">Book Title</label>
+                <input type="text" name="Book" id="Book" placeholder="Enter book title">
+                <label for="Author">Author</label>
+                <input type="text" name="Author" id="Author" placeholder="Enter author name">
+                <label for="ISBN">ISBN</label>
+                <input type="text" name="ISBN" placeholder="Enter ISBN" id="ISBN">
+                <div class="split">
+                    <div class="choice">
+                        <label for="Category">Category</label>
+                        <select name="Category" id="Category">
+                            <option value="Fiction">Fiction</option>
+                            <option value="Non-Fiction">Non-Fiction</option>
+                            <option value="Sci-fi">Sci-fi</option>
+                            <option value="Science">Science</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="totalCopies">Total copies</label>
+                        <input type="number" name="totalCopies" id="totalCopies" placeholder="1">
+                    </div>
+                </div>
+                <label for="Year">Publication Year</label>
+                <input type="number" name="Year" id="Year" placeholder="2024">
+                <label for="Publisher">Publisher</label>
+                <input type="text" name="Publisher" id="Publisher" placeholder="Enter publisher name">
+                <button id="add">Add Book to Library</button>
+            </div>
+            <div class="Current">
+                <div class="separate">
+                    <h2><img src="/Assets/view_8984589.png">Current Library Books</h2>
+                    <input type="search" name="Search" id="Search" placeholder="Search book...">
+            </div>
+                
+                <table id="Catalog">
+                    <tr class="th">
+                        <th>Book Details</th>
+                        <th>Category</th>
+                        <th>Copies</th>
+                        <th>Actions</th>
+                    </tr>
+         
+                </table>
+                <div class="separate">
+                <p>Showing <span>4</span> of 156 books</p>
+                <div>
+                    <button>Previous</button>
+                    <button> 1 </button>
+                    <button> 2 </button>
+                    <button> 3 </button>
+                    <button>Next</button>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div class="h-aligning">
+            <div class="total">
+                <div>
+                <p>Total Books</p>
+                <h3>1,247</h3></div>
+                <div class="icon">
+                    <img src="/Assets/book_16794229.png">
+                </div>
+            </div>
+            <div class="available">
+                <div>
+                <p>Avaible</p>
+                <h3 id="green">892</h3></div>
+                <div class="icon">
+                    <img src="/Assets/clock_14026529.png">
+                </div>
+            </div>
+            <div class="Borrowed">
+                <div>
+                <p>Borrowed</p>
+               <h3 id="orange">321</h3>    
+                </div>
+               <div class="icon">
+                <img src="/Assets/right_7289297.png">
+               </div>
+            </div>
+            <div class="Out-of-Stock">
+                <div>
+                <p>Out of Stock</p>
+                <h3 id="red">34</h3></div>
+                <div class="icon">
+                    <img src="/Assets/warning_16925455.png">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script type="module" src="/add-book.js"></script>
+</body>
+</html>

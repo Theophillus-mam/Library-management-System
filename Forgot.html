@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="bContainer">
     <div class="Container">
         <div class="Purple">
         <h1>EduLibrary</h1>
@@ -17,10 +18,10 @@
             <p>Don't worry! Enter your email and we'll send you<br> a link to restart your password</p>
 
             <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" placeholder= "Enter your email Address">
+            <input type="email" name="email" id="email1" placeholder= "Enter your email Address">
 
-            <button>Send Reset Link</button>
-            <div class="apart"><p>Remember your password?</p><p><a href="#">Back to Login</a></p></div><hr>
+            <button onclick="Sendlink()">Send Reset Link</button>
+            <div class="apart"><p>Remember your password?</p><p><a href="login.html">Back to Login</a></p></div><hr>
             <div class="contact">
                 <div><p>Need help? Contact our support teams</p></div>
                 <div class="icons">
@@ -33,7 +34,9 @@
     </div>
     <div class="Container1">
         <h1>Secure & Reliable</h1>
-        <p>Your account security is our priority. We use advanced encryption to protect your data.</p>
+        <p>Your account security is our priority. We use<br> advanced encryption to protect your data.</p>
     </div>
+    </div>
+    <script src="/forgot-login-register.js"></script>
 </body>
 </html>

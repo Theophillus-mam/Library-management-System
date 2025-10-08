@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book-style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Container">
+        <div class="navigation">
+            <nav>
+            <div class="icon">
+            <img src="/Assets/Blue-popular.png" alt="">
+            <h1>LibraryHub</h1>
+            </div>
+            <ul>
+             <li><a href="#">Book Catalog</a></li>
+             <li><a href="#">My Books</a></li>
+             <li><a href="#">History</a></li>
+            <li><a href="#">Reservations</a></li>             
+            </ul>
+            <div class="profile">
+             <div>2</div> 
+             <div>
+                Profile
+                Sarah Johnson
+             </div>  
+            </div>
+               
+            </nav>
+        </div>
+        <div class="container1">
+    <div class="side-panel">
+        <div class="search">
+          <p><b>Search Books</b></p>
+          <input type="search" placeholder="Search by title, author, ISBN..." name="search">  
+        </div>
+        <div class="filter">
+          <p><b>Filters</b></p>  
+          <label for="options">Category</label>
+          <select name="options" id="options">
+            <option value="All Categories">All Categories</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+            <option value="Biography">Biography</option>
+          </select>
+          <div class="available">
+          <p>Availability</p>
+          <div><input type="checkbox" name="available" id="available">
+          <label for="available">Available Now</label></div>  
+          <div><input type="checkbox" name="reserve" id="reserve"> 
+          <label for="reserve">On Reserve</label></div>
+          <label for="Year">Publication Year</label> 
+         <div class="flex"><input type="number" name="Year" id="Year" placeholder=" From"> <input type="number" name="Year" id="year" placeholder=" To"></div>
+        </div>
+        </div>
+        <div class="Quick">
+         <p><b>Quick Stats</b></p>
+         <div class="split">
+            <div class="flex">
+            <p>Books Borrowed</p> 
+            <p>3/5</p>    
+            </div>
+            <div class="flex">
+             <p>Due This Week</p>
+             <p>2</p>   
+            </div>
+             <div class="flex">
+              <p>Reserved Books</p>
+              <p>1</p> 
+             </div>              
+         </div>         
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="cata-header">
+            <div><h1>Book Catalog</h1>
+            <p>Discover and borrow from our collection of 15,247 books</p></div>
+            <div style="display: flex;"><p>Sort by:</p>
+            <select name="relevance" id="relevance">
+              <option value="Relevance ">Relevance</option>
+              <option value="Title A-Z">Title A-Z</option>
+              <option value="Author">Author</option>
+              <option value="Publication Date">Publication Date</option>
+              <option value="Popularity">Popularity</option>
+            </select>
+            <div class="view-layout">
+
+            </div></div>
+        </div>
+        <div id="book" class="books">
+            
+            </div>
+            <div class="index">
+                <button><p><</p></button>
+                <p><a href="#">1</a></p>
+                <p><a href="#">2</a></p>
+                <p><a href="#">3</a></p>
+                <p><a href="#">...</a></p>
+                <p><a href="#">12</a></p> 
+                <button>></button>
+            </div>          
+        </div>
+    </div>
+</div>
+<script type="module" src="catalog.js"></script>
+</body>
+</html>

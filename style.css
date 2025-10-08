@@ -3,26 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    width: 100%;
+    height: 100%;
+}
 .Container{
     margin-left: 100px;
     background-color: rgb(246, 246, 243);
-    height: 100vh;
+    height: 140vh;
     padding-left: 20px;
-
+    width: 90%;
 }
 .navigation{
     display: flex;
     justify-content: baseline;
-    gap: 380px;
+    justify-content: space-between;
     margin-top: 20px;
     background-color: white;
+}
+.nav{
+    display: flex;
+    justify-content: baseline;
+}
+.navigation img.nav{
+    width: 10px;
 }
 a{
     text-decoration: none;
     color: black;
 }
-
+.navigation .nav{
+    width: 15%;
+}
+.navigation img.nav{
+    width: 100%;
+}
 ul{
     display: flex;
     gap: 45px;
@@ -35,224 +50,240 @@ input{
 .part-one{
     margin-top: 20px;
     display: flex;
-    width: 80%;
+    width: 90%;
     gap: 30px;
 }
-.T-Books{
-    background-color: white;
-    width: 350px;
-    height: 100px;
+.Panel{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-.Active-mem{
+    padding-top: 30px;
+    padding-left: 10px;
+    gap: 15px;
+    font-size: 20px;
     background-color: white;
-    width: 350px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-right: 10px;
-}
-.issued{
-    background-color: white;
-    width: 350px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-right: 10px;
-}
-.overdue{
-    background-color: white;
-    width: 350px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-right: 10px;
-}
-.part{
-    display: flex;
-    margin-top: 40px;
-    height: 300px;
-    width: 100%;
-    gap: 70px;
-}
-.part-two{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: white;
-    height: 400px;
-}
-.part-two img{
-    width: 30px;
-}
-.newbook{
-    height: 70px;
-    background-color: rgb(244, 244, 244);
-    padding-left: 30px;
-    width: 80%;
-    margin-left: 20px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.bookissued{
-    height: 70px;
-    background-color: rgb(244, 244, 244);
-    padding-left: 30px;
-    width: 80%;
-    margin-left: 20px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.returnedbook{
-    height: 70px;
-    background-color: rgb(244, 244, 244);
-    padding-left: 30px;
-    width: 80%;
-    margin-left: 20px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.new-member{
-    height: 70px;
-    background-color: rgb(244, 244, 244);
-    padding-left: 30px;
-    width: 80%;
-    margin-left: 20px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    width: 16%;
 }
 
-.part-3{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.Panel img{
+    width: 20px;
 }
-.top{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: white;
-    height: 480px;
-    width: 400px;
-    padding-left: 10px;
+.inner{
+    margin-top: 30px;
+    width: 100%;
+    height: 95%;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
-.top button{
-    height: 45px;
-    width: 320px;
+.welcome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(53, 53, 236);
+    color: white;
+    width: 95%;
+    height: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 10px;
 }
-.top button.blue {
-    background-color: blue;
-    color:white;
-    
-}
-.top button.green {
-    background-color: rgb(31, 150, 31);
-    color:white;
-    
-}
-.top button.orange {
-    background-color: rgb(245, 167, 22);
-    color:white;
-}
-.top button.purple {
-    background-color: rgb(175, 53, 175);
-    color:white;
-}
-.top img{
-    width: 30px;
-}
-.bottom{
-    display: grid;
+.box{
+    display: flex;
     gap: 20px;
-    background-color: white;
-    height: 450px;
-    width: 400px;
-    padding-left: 10px;
-}
-.move{
-margin-top: 260px;
-background-color: white;
-height: 250px;
-}
-.apart{
+    margin-top: 30px;
+    width: 95%;
+    height: 200px;}
+    .box img{
+        width: 50px;
+        height: 50px;
+    }
+    .box div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-content: baseline;
+        align-items: center;
+        background-color: white;
+        width: 26%;
+        height: 140px;
+        padding-left: 10px;
+    }
+    .box div h2{
+        margin-bottom: 50px;
+        margin-right: 30px;
+    }
+    .box div p{
+        margin-top: 20px;
+    }
+    .two-part{
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+        width: 95%;
+        height: 600px;
+    }
+    .C-Reading{
+        background-color: white;
+        width: 70%;
+        height: 70%;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .Recommended{
+        background-color: white;
+        width: 30%;
+        height: 94%;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .bottom{
+        margin-top: 30px;
+        width: 95%;
+        height: 80%;
+        background-color: white;
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .completed{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 95%;
+        height: 300px;
+        background-color: white;
+        border-radius: 20px;
+        padding-left: 10px;
+        
+    }
+    .reading{
+        justify-content: space-between;
+        gap: 8px; 
+        width: 90%;
+        height: 30px;
+        background-color: white;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .added{
+        justify-content: space-between;
+        gap: 8px;
+        width: 90%;
+        height: 30px;
+        background-color: white;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .rated{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 8px;
+        width: 90%;
+        height: 30px;
+        background-color: white;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .completed img{
+        width: 40px;
+        height: 40px;
+    }
+    .box .spit{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .gray{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 20px;
+    }
+    .book-cover1{
+        background-color: rgb(237, 237, 237);
+        height: 130px;
+        display: flex;
+        gap: 20px;
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+    .book-cover1 img{
+        width: 50px;
+        height: 60px;
+    }
+  progress{
+        width: 200px;
+        height: 20px;
+        margin-bottom: 100px;
+        margin-left: 30px;
+
+        }
+   span{
+        background-color: rgb(237, 237, 237);
+        width: 80%;
+        height: 30px;
+        margin-bottom: 100px;
+   }
+   .split{
     display: flex;
     justify-content: space-between;
-    width: 80%;
-}
-.part-four{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    height: 200px;
     
-}
-svg{
-    margin-top: 20px;
-}
-.b1{
-    width: 23%;
-    border: black solid 2px;
-    border-radius: 20px;
+    width: 100%
+   }
+   .par{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+   }
+   .book1{
+    height: 65%;
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10px;
-}
-.b2{
-    width: 23%;
-    border: black solid 2px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
-}
-.b3{
-    width: 23%;
-    border: black solid 2px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
-}
-.b4{
-    width: 23%;
-    height: 120px;
-    border: black solid 2px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 200px;
-    padding-left: 10px;
-}
-.pic img{
-    width: 45px;
-}
-.pic{
-    margin-right: 10px;
-}
-.navigation img{
-    width: 70px;
-}
-.n{
-    display: flex;
-    justify-content: baseline;
+    align-items: center;
+   }
+   .hun{
+    width: 100%;
+   }
+   .pic{
+    width: 80%;
+    height: 70%;
+    
+   }
+   .pic img{
+    width: 100%;
+    
+   }
+   .star-rating {
+  font-size: 29px; /* Adjust star size */
+  color: #ccc; /* Default color for empty stars */
 }
 
+.star.filled {
+  color: gold; /* Color for filled stars */
+}
+ .rating{
+    display: flex;
+    gap: 10px;
+ }  
+   
+    
