@@ -19,14 +19,12 @@
         </nav>
         <div class="main">
         <div id="Panel" class="Panel">
-            <p><img src="/Assets/line-chart-line.png"><a href="index1.html">Dashboard</a></p>
+            <p>Dashboard</p>
             <p>Book Management</p>
             <p><img src="/Assets/group-chat_9333906.png">Members</p>
             <p><img src="/Assets/change_7344607.png">Transactions</p>
             <p>Reports</p>
-            <ul id="myul">
-
-            </ul>
+    
         </div>
         <div class="Management">
             <div class="separate">
@@ -42,11 +40,11 @@
             <div class="add-new">
                 <h2><img src="/Assets/add_15526434.png">Add New Book</h2>
                 <label for="Book">Book Title</label>
-                <input type="text" name="Book" id="Book" placeholder="Enter book title">
+                <input type="text" name="Book" id="Book" placeholder="Enter book title" required>
                 <label for="Author">Author</label>
-                <input type="text" name="Author" id="Author" placeholder="Enter author name">
+                <input type="text" name="Author" id="Author" placeholder="Enter author name" required>
                 <label for="ISBN">ISBN</label>
-                <input type="text" name="ISBN" placeholder="Enter ISBN" id="ISBN">
+                <input type="text" name="ISBN" placeholder="Enter ISBN" id="ISBN" required>
                 <div class="split">
                     <div class="choice">
                         <label for="Category">Category</label>
@@ -59,13 +57,13 @@
                     </div>
                     <div>
                         <label for="totalCopies">Total copies</label>
-                        <input type="number" name="totalCopies" id="totalCopies" placeholder="1">
+                        <input type="number" name="totalCopies" id="totalCopies" placeholder="1" required>
                     </div>
                 </div>
                 <label for="Year">Publication Year</label>
                 <input type="number" name="Year" id="Year" placeholder="2024">
                 <label for="Publisher">Publisher</label>
-                <input type="text" name="Publisher" id="Publisher" placeholder="Enter publisher name">
+                <input type="text" name="Publisher" id="Publisher" placeholder="Enter publisher name" required>
                 <button id="add">Add Book to Library</button>
             </div>
             <div class="Current">
@@ -99,7 +97,7 @@
             <div class="total">
                 <div>
                 <p>Total Books</p>
-                <h3>1,247</h3></div>
+                <h3 id="totalbooks"></h3></div>
                 <div class="icon">
                     <img src="/Assets/book_16794229.png">
                 </div>

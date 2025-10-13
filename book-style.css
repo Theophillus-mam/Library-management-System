@@ -103,21 +103,26 @@ input, select {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    border-radius: 30px;
 }
-
+ .books .button{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    gap: 10px;
+}
 button{
-    width: 120px;
+    width: 80px;
     height: 40px;
     font-size: 16px;
     border-radius: 10px;
     border: none;
 }
- button.Borrow{
+ button.borrow-btn{
     background-color: blue;
     color: white;
 }
-button.return{
+button.return-btn{
     background-color: rgb(251, 160, 22);
     color: white;
 }

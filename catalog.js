@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
-import{collection, addDoc, getFirestore, getDocs} from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
+import{collection, getFirestore, getDocs, updateDoc, increment, getDoc, doc} from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAp2Ts3IfaDqQ_3PsMTsMzBl3f0Utq3KDs",
@@ -13,54 +13,110 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-async function getBooks(){
-    try {
-        const firebasebooks = await getDocs(collection(db, "books"));
-        console.log(firebasebooks);
-        const books = [];
-       
-        
-        firebasebooks.forEach(doc => {
-            
-            
-          books.push({id:doc.id ,
-            ...doc.data()})
-        });
-        console.log(books);
-    
-            books.forEach(book => {
-            const data = document.getElementById("book");
-            const list = document.createElement('div');
-            list.innerHTML = `
-                <p>available</p><br>
-                <h3>${book.booktitle}</h3><br>
-                <p>by ${book.author}</p><br>
-                <button class="Borrow">Borrow</button>
-    
-           `;data.appendChild(list);
-        })
-    
-        
-            
-        
-    } catch (error) {
-        
-    }
-}
-const googleLogin = document.getElementById("trans");
-/*googleLogin.addEventListener('click', function(){
-    signInWithPopup(auth, Provider)
-    .then((result)=>{
-      const credential = GoogleAuthProvider.credentialFromError(result);
-      const user = result.user;
-      window.location.href ='../logged.html'
 
-    }).catch((error)=>{
-  const errorCode = error.code;
-  const errorMessage = error.message;
-})
-  
-});*/
+
+async function getBooks() {
+  try {
+    const firebasebooks = await getDocs(collection(db, "books"));
+    const books = [];
+
+    firebasebooks.forEach(docSnap => {
+      books.push({ id: docSnap.id, ...docSnap.data() });
+    });
+
+    const container = document.getElementById("book");
+    container.innerHTML = ""; 
+
+    books.forEach(book => {
+      const list = document.createElement('div');
+      list.innerHTML = `
+        <p>${book.status}</p>
+        <h3>${book.booktitle}</h3>
+        <p>by ${book.author}</p>
+        <div class="button">
+        <button class="borrow-btn" data-id="${book.id}">Borrow</button>
+        <button class="return-btn" data-id="${book.id}">Return</button>
+        </div>
+      `;
+      container.appendChild(list);
+
+      
+      list.querySelector(".borrow-btn").addEventListener("click", () => borrow(book.id));
+      list.querySelector(".return-btn").addEventListener("click", () => Return(book.id));
+    });
+
+  } catch (error) {
+    console.error("Error fetching books:", error);
+  }
+}
+
+async function borrow(id) {
+  const bookRef = doc(db, "books", id);
+  await updateDoc(bookRef, {
+    availableCopies: increment(-1)
+  });
+
+  const bookSnap = await getDoc(bookRef);
+  const book = bookSnap.data();
+
+  if (book.availableCopies <= 0) {
+    await updateDoc(bookRef, { status: "Unavailable" });
+  }
+
+
+}
+
+async function Return(id) {
+   
+  const bookRef = doc(db, "books", id);
+  await updateDoc(bookRef, {
+    availableCopies: increment(1)
+  });
+
+  const bookSnap = await getDoc(bookRef);
+  const book = bookSnap.data();
+
+  if (book.availableCopies > 0) {
+    await updateDoc(bookRef, { status: "Available" });
+  }
+  if(book.availableCopies >= book.totalCopies){
+      alert("exceed total copies")
+ }
+}
+
+document.getElementById('Search').addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    const listItems = document.querySelectorAll('#book div');
+
+    listItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(query) ? '' : 'none';
+    });
+});
+
+
 getBooks();
 
- 
+
+
+ function myFunction() {
+  document.getElementById("relevance").classList.toggle("show");
+}
+
+function filterFunction() {
+  const input = document.getElementById("relevance");
+  const filter = input.value.toUpperCase();
+  const div = document.getElementById("options");
+  const items = div.getElementsByTagName("a"); // or use querySelectorAll('.option-item')
+
+  for (let i = 0; i < items.length; i++) {
+    const txtValue = items[i].textContent || items[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      items[i].style.display = "";
+    } else {
+      items[i].style.display = "none";
+    }
+  }
+}
+myFunction()
+filterFunction()

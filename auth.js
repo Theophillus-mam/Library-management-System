@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
-import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
 import {getFirestore, doc, setDoc} from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
 const firebaseConfig = {
   apiKey: "AIzaSyAp2Ts3IfaDqQ_3PsMTsMzBl3f0Utq3KDs",
@@ -11,8 +11,15 @@ const firebaseConfig = {
   measurementId: "G-8CVKZM1MS7"
 };
 
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+
+const form = document.querySelector('form')
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevents the default form submission
+      
+    
 document.getElementById("create").addEventListener('click', Register)
 
 function Register(){
@@ -41,6 +48,7 @@ function Register(){
       Role:Role,
       Email:Email,
       
+      
   
     })
         alert("signed up successfully")
@@ -50,4 +58,5 @@ function Register(){
   });
 }
 
+});
 

@@ -21,6 +21,8 @@ const year = document.getElementById("Year").value;
 const category = document.getElementById("Category").value;
 const copies = document.getElementById("totalCopies").value;
 
+
+
 async function addBook(){
 const booktitle = document.getElementById("Book").value;
 const author = document.getElementById("Author").value;
@@ -29,6 +31,9 @@ const publisher = document.getElementById("Publisher").value;
 const year = document.getElementById("Year").value;
 const category = document.getElementById("Category").value;
 const totalCopies = document.getElementById("totalCopies").value;
+if(!booktitle || !author || !isbn || !publisher || !year || !category || !copies){
+    alert("Please fill in all fields")
+}
 
 await addDoc(collection(db, "books"), {
     booktitle:booktitle,
@@ -43,12 +48,7 @@ await addDoc(collection(db, "books"), {
 }); alert("Book added successfully")
  
 }
-let status;
- if(copies > 0){
-        status = "Available";
-       }else{
-        status = "Out of stock"
-       }
+
 async function getBooks(){
     try {
         const firebasebooks = await getDocs(collection(db, "books"));
@@ -63,7 +63,18 @@ async function getBooks(){
             ...doc.data()})
         });
         console.log(books);
-       
+        let totalbook = 0;
+        books.forEach(book => {
+            totalbook += parseInt(book.totalCopies) || 0;
+        });
+        let totalavailable = 0;
+        books.forEach(book => {
+            totalbook += parseInt(book.availableCopies) || 0;
+        });
+
+document.getElementById("green").innerHTML = totalbook;
+
+        document.getElementById("totalbooks").innerHTML = totalbook;
         books.forEach(book => {
             const data = document.getElementById("Catalog");
             const list = document.createElement('tr')
@@ -85,5 +96,13 @@ async function getBooks(){
     }
 }
 getBooks();
+document.getElementById('Search').addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    const listItems = document.querySelectorAll('#Catalog tr');
 
+    listItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(query) ? '' : 'none';
+    });
+});
  

@@ -34,7 +34,7 @@
     <div class="side-panel">
         <div class="search">
           <p><b>Search Books</b></p>
-          <input type="search" placeholder="Search by title, author, ISBN..." name="search">  
+          <input type="search" id="Search" placeholder="Search by title, author, ISBN..." name="search">  
         </div>
         <div class="filter">
           <p><b>Filters</b></p>  
@@ -80,7 +80,7 @@
             <div><h1>Book Catalog</h1>
             <p>Discover and borrow from our collection of 15,247 books</p></div>
             <div style="display: flex;"><p>Sort by:</p>
-            <select name="relevance" id="relevance">
+            <select name="relevance" id="relevance" onkeyup="filterFunction()">
               <option value="Relevance ">Relevance</option>
               <option value="Title A-Z">Title A-Z</option>
               <option value="Author">Author</option>
